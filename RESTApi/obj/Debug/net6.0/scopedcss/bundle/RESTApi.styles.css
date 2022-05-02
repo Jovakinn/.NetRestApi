@@ -1,0 +1,49 @@
+/* _content/RESTApi/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-tmd2mot3fj] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-tmd2mot3fj] {
+  color: #0077cc;
+}
+
+.btn-primary[b-tmd2mot3fj] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-tmd2mot3fj], .nav-pills .show > .nav-link[b-tmd2mot3fj] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-tmd2mot3fj] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-tmd2mot3fj] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-tmd2mot3fj] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-tmd2mot3fj] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-tmd2mot3fj] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
