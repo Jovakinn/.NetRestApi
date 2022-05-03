@@ -38,6 +38,19 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.3.22175.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0-preview.3.22175.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0-preview.3.22175.4"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.3.22175.4": {
         "type": "package",
         "dependencies": {
@@ -67,6 +80,21 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.3.22175.4": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0-preview.3.22175.4"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {}
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
@@ -244,6 +272,20 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.3.22175.1": {
+      "sha512": "gPGOjL+rzs8mjWJ+yJ4HRI6wrbQa0d0rWDji6aamIbLtjMAIQKHsJiJ8zNq5Y56hS/0CAqwSL5XoAQ5k3ejagg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.relational/7.0.0-preview.3.22175.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
+        "microsoft.entityframeworkcore.relational.7.0.0-preview.3.22175.1.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.3.22175.4": {
       "sha512": "+P7ny1xG3vZAcMGCN3U0A6wula/zfJmrLVGcLhT8hVP3TlHSVjiEwdRBdIrxJoWLXwTx0sdUfNx+xcm6L7dDSA==",
       "type": "package",
@@ -295,6 +337,33 @@
         "lib/netstandard2.0/Microsoft.Extensions.Caching.Memory.xml",
         "microsoft.extensions.caching.memory.7.0.0-preview.3.22175.4.nupkg.sha512",
         "microsoft.extensions.caching.memory.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.3.22175.4": {
+      "sha512": "imgbRcyA2bRRxKjJh0V8TMGZT3reeHt8Spahs6y0J4LmIx5AvTzm136qg37SGF+rIlaNOk2fKAwhY3bggsSjQQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.abstractions/7.0.0-preview.3.22175.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Configuration.Abstractions.targets",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/net7.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
+        "microsoft.extensions.configuration.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -579,7 +648,8 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Microsoft.EntityFrameworkCore >= 7.0.0-preview.3.22175.1"
+      "Microsoft.EntityFrameworkCore >= 7.0.0-preview.3.22175.1",
+      "Microsoft.EntityFrameworkCore.Relational >= 7.0.0-preview.3.22175.1"
     ]
   },
   "packageFolders": {
@@ -620,6 +690,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[7.0.0-preview.3.22175.1, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[7.0.0-preview.3.22175.1, )"
           }

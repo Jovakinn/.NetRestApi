@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "EkykFDcXy2QyA0Hdk+N5MXW5olIrS4cwhcxhPN/vce+czMtrFLWjefnkb6eYgLlSVAFNp9s4/4sCWH7MgrdTFQ==",
+  "dgSpecHash": "/eA5zJ5iNdIqw6njOA2VA0FoSptC5witbPfU1Q9Gimm/rWi7nfDacusWRFpGq6aBLrtG1/1mCl7B7VRY9iG+IA==",
   "success": true,
   "projectFilePath": "/Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/RESTApi.csproj",
   "expectedPackageFiles": [
     "/Users/maksymkhodakov/.nuget/packages/microsoft.entityframeworkcore/7.0.0-preview.3.22175.1/microsoft.entityframeworkcore.7.0.0-preview.3.22175.1.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.0-preview.3.22175.1/microsoft.entityframeworkcore.abstractions.7.0.0-preview.3.22175.1.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.0-preview.3.22175.1/microsoft.entityframeworkcore.analyzers.7.0.0-preview.3.22175.1.nupkg.sha512",
+    "/Users/maksymkhodakov/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.0-preview.3.22175.1/microsoft.entityframeworkcore.relational.7.0.0-preview.3.22175.1.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0-preview.3.22175.4/microsoft.extensions.caching.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.caching.memory/7.0.0-preview.3.22175.4/microsoft.extensions.caching.memory.7.0.0-preview.3.22175.4.nupkg.sha512",
+    "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0-preview.3.22175.4/microsoft.extensions.configuration.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0-preview.3.22175.4/microsoft.extensions.dependencyinjection.7.0.0-preview.3.22175.4.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0-preview.3.22175.4/microsoft.extensions.dependencyinjection.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512",
     "/Users/maksymkhodakov/.nuget/packages/microsoft.extensions.logging/7.0.0-preview.3.22175.4/microsoft.extensions.logging.7.0.0-preview.3.22175.4.nupkg.sha512",

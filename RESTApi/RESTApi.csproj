@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.0-preview.3.22175.1" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.0-preview.3.22175.1" />
     </ItemGroup>
 
 </Project>
