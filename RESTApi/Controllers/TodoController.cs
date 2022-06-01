@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using RESTApi.Context;
 using RESTApi.Models;
 
 namespace RESTApi.Controllers;
@@ -18,7 +19,7 @@ namespace RESTApi.Controllers;
 
         // GET: api/TodoItems
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()
+        public async Task<ActionResult<IEnumerable<TodoItemDto>>> GetTodoItems()
         {
             Debug.Assert(_context.TodoItems != null, "_context.TodoItems != null");
             return await _context.TodoItems
@@ -28,11 +29,11 @@ namespace RESTApi.Controllers;
 
         // GET: api/TodoItems/5
         [HttpGet("{id:long}")]
-        public async Task<ActionResult<TodoItemDTO>?> GetTodoItem(long id)
+        public async Task<ActionResult<TodoItemDto>?> GetTodoItem(long id)
         {
             if (_context.TodoItems == null) return null;
             
-            var todoItem = await _context.TodoItems.FindAsync(id);
+            var todoItem = await _context.TodoItems.FindAsync(id).ConfigureAwait(false);
 
             if (todoItem == null) return NotFound();
 
@@ -41,7 +42,7 @@ namespace RESTApi.Controllers;
         // PUT: api/TodoItems/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id:long}")]
-        public async Task<IActionResult> UpdateTodoItem(long id, TodoItemDTO todoItemDto)
+        public async Task<IActionResult> UpdateTodoItem(long id, TodoItemDto todoItemDto)
         {
             if (id != todoItemDto.Id)
             {
@@ -74,7 +75,7 @@ namespace RESTApi.Controllers;
         // POST: api/TodoItems
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<TodoItemDTO>> CreateTodoItem(TodoItemDTO todoItemDto)
+        public async Task<ActionResult<TodoItemDto>> CreateTodoItem(TodoItemDto todoItemDto)
         {
             var todoItem = new TodoItem
             {
@@ -117,7 +118,7 @@ namespace RESTApi.Controllers;
             return _context.TodoItems != null && _context.TodoItems.Any(e => e.Id == id);
         }
 
-        private static TodoItemDTO ItemToDto(TodoItem todoItem) =>
+        private static TodoItemDto ItemToDto(TodoItem todoItem) =>
             new()
             {
                 Id = todoItem.Id,

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace RESTApi.Models;
 
-public class Movie : BaseModel
+public abstract class Movie : BaseModel
 {
     [StringLength(60, MinimumLength = 3)]
     [Required]

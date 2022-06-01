@@ -1,4 +1,4 @@
-namespace RESTApi.Service;
+namespace RESTApi.Service.interfaces;
 
 public interface IRepairService
 {

@@ -37,3 +37,5 @@
 /Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/bin/Debug/net6.0/System.Collections.Immutable.dll
 /Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
 /Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/obj/Debug/net6.0/RESTApi.csproj.CopyComplete
+/Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/maksymkhodakov/RiderProjects/RESTApi/RESTApi/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll

@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using RESTApi.Models;
 using RESTApi.Repo;
 using RESTApi.Service;
+using RESTApi.Service.interfaces;
 
 namespace RESTApi.Controllers;
 

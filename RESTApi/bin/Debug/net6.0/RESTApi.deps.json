@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "RESTApi/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.0-preview.3.22175.1"
+          "Microsoft.EntityFrameworkCore": "7.0.0-preview.3.22175.1",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.0-preview.3.22175.1"
         },
         "runtime": {
           "RESTApi.dll": {}
@@ -40,6 +41,18 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/7.0.0-preview.3.22175.1": {},
+      "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.3.22175.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0-preview.3.22175.1",
+          "Microsoft.Extensions.Configuration.Abstractions": "7.0.0-preview.3.22175.4"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.17501"
+          }
+        }
+      },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.3.22175.4": {
         "dependencies": {
           "Microsoft.Extensions.Primitives": "7.0.0-preview.3.22175.4"
@@ -61,6 +74,17 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.Extensions.Caching.Memory.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.22.17504"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.3.22175.4": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0-preview.3.22175.4"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.17504"
           }
@@ -179,6 +203,13 @@
       "path": "microsoft.entityframeworkcore.analyzers/7.0.0-preview.3.22175.1",
       "hashPath": "microsoft.entityframeworkcore.analyzers.7.0.0-preview.3.22175.1.nupkg.sha512"
     },
+    "Microsoft.EntityFrameworkCore.Relational/7.0.0-preview.3.22175.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gPGOjL+rzs8mjWJ+yJ4HRI6wrbQa0d0rWDji6aamIbLtjMAIQKHsJiJ8zNq5Y56hS/0CAqwSL5XoAQ5k3ejagg==",
+      "path": "microsoft.entityframeworkcore.relational/7.0.0-preview.3.22175.1",
+      "hashPath": "microsoft.entityframeworkcore.relational.7.0.0-preview.3.22175.1.nupkg.sha512"
+    },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0-preview.3.22175.4": {
       "type": "package",
       "serviceable": true,
@@ -192,6 +223,13 @@
       "sha512": "sha512-vEYSUgTgO8B29S7KZVO38SaUFtO+KUgMLPiD1mgGNyAeqk9gsjldW1iKbhQqX6qtIfz8o7jafVOD9H+u5kP/AQ==",
       "path": "microsoft.extensions.caching.memory/7.0.0-preview.3.22175.4",
       "hashPath": "microsoft.extensions.caching.memory.7.0.0-preview.3.22175.4.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Configuration.Abstractions/7.0.0-preview.3.22175.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-imgbRcyA2bRRxKjJh0V8TMGZT3reeHt8Spahs6y0J4LmIx5AvTzm136qg37SGF+rIlaNOk2fKAwhY3bggsSjQQ==",
+      "path": "microsoft.extensions.configuration.abstractions/7.0.0-preview.3.22175.4",
+      "hashPath": "microsoft.extensions.configuration.abstractions.7.0.0-preview.3.22175.4.nupkg.sha512"
     },
     "Microsoft.Extensions.DependencyInjection/7.0.0-preview.3.22175.4": {
       "type": "package",

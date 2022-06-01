@@ -1,6 +1,8 @@
 using RESTApi.Models;
 using RESTApi.Repo;
 using RESTApi.Service;
+using RESTApi.Service.implementations;
+using RESTApi.Service.interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,10 +1,11 @@
 using RESTApi.Models;
 using RESTApi.Repo;
+using RESTApi.Service.interfaces;
 using static System.String;
 
-namespace RESTApi.Service;
+namespace RESTApi.Service.implementations;
 
-public class RepairService  : IRepairService
+public class RepairService : IRepairService
 {
     private IBaseRepository<Document> Documents { get; set; } = null!;
     private IBaseRepository<Car> Cars { get; set; } = null!;
@@ -38,7 +39,6 @@ public class RepairService  : IRepairService
         if (worker == null) return;
         Documents.Create(new Document
         {
-            CarId = car.Id,
             WorkerId = worker.Id,
             Car = car,
             Worker = worker
